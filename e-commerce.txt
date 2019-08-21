@@ -1,0 +1,67 @@
+E-commerce
+
+
+user 
+    - _id
+    - username
+    - email
+    - mobile
+    - password
+    - address [{}] //Update code
+
+category
+    - _id
+    - name
+
+product
+    - _id
+    - name
+    - price
+    - description
+    - codEligible
+    - stock
+    - category
+    - user
+    - reviews
+
+cart_Items
+    - _id
+    - product
+    - quantity
+    - user
+
+address
+    - _id
+    - Street
+    - Landmark
+    - City
+    - user
+    - addressType
+    - geo: {lat, lan}
+
+reviews
+    - _id
+    - product
+    - user
+    - title
+    - body
+    - rating
+
+order
+    - _id
+    - user
+    - orderDate
+    - orderNumber
+    - total
+    -address
+    //- orderItems - [{product, quantity, price}] // Real power of noSQL DB
+
+orderItems  //If we do this SQL DB approach we are following
+    - _id
+    - order
+    - product
+    - price
+    - quantity
+
+
+

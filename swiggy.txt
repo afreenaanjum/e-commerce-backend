@@ -1,0 +1,43 @@
+user 
+    - _id
+    - username
+    - email
+    - mobile
+    - password
+    - address [{}] //Update code
+
+category
+    - _id
+    - name
+
+items 
+    - itemName
+    - price
+    - category
+
+menu
+    - id
+    - items
+
+{
+    restuarant
+        - _id
+        - name
+        - cuisines
+        - address of resturant
+
+    cuisines 
+        - _id
+        - name
+}
+
+cartitems
+    - user
+    - restuarant
+    - items 
+    - quantity
+
+
+orderItems
+    -user
+    -cartItems
