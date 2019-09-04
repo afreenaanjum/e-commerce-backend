@@ -9,8 +9,10 @@ const port = process.env.PORT || 3005
 
 
 app.use(express.json())
-app.use('/', router)
+
 app.use(express.static(path.join(__dirname, "client/build")))
+app.use('/', router)
+
 
 app.listen(port, () => {
     console.log('Listening to port', port)

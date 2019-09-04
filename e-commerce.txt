@@ -1,6 +1,5 @@
 E-commerce
 
-
 user 
     - _id
     - username

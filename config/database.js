@@ -1,10 +1,8 @@
-const mongoose = require('mongoose')// npm install mongoose
+const mongoose = require('mongoose')
 
 //db configuration
-mongoose.Promise = global.Promise // we are telling mongoose to use ES6 promise library
-// We are passing url because this might be present in another place or country and to get access that
-//options are always passed as second arg
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb+srv://anjumafreena:Copycat:P12@e-commerce-iqqqj.mongodb.net/test?retryWrites=true&w=majority', { userNewUrlParser: true })
+mongoose.Promise = global.Promise 
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost:27017/e-commerce', { userNewUrlParser: true })
     .then(() => {
         console.log("Connected to db of e-commerce")
     })
